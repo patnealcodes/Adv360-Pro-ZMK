@@ -32,6 +32,92 @@
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
     };
+
+    ASTRK1: ASTRK1 {
+       compatible = "zmk,behavior-mod-morph";
+       label = "ASTRK1";
+       #binding-cells = <0>;
+       bindings = <&kp ASTRK>, <&kp 1>;
+       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    LBRC2: LBRC2 {
+       compatible = "zmk,behavior-mod-morph";
+       label = "LBRC2";
+       #binding-cells = <0>;
+       bindings = <&kp LBRC>, <&kp 2>;
+       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    LBKT3: LBKT3 {
+       compatible = "zmk,behavior-mod-morph";
+       label = "LBKT3";
+       #binding-cells = <0>;
+       bindings = <&kp LBKT>, <&kp 3>;
+       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    LPAR4: LPAR4 {
+       compatible = "zmk,behavior-mod-morph";
+       label = "LPAR4";
+       #binding-cells = <0>;
+       bindings = <&kp LPAR>, <&kp 4>;
+       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    PRCNT5: PRCNT5 {
+       compatible = "zmk,behavior-mod-morph";
+       label = "PRCNT5";
+       #binding-cells = <0>;
+       bindings = <&kp PRCNT>, <&kp 5>;
+       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    CARET6: CARET6 {
+       compatible = "zmk,behavior-mod-morph";
+       label = "CARET6";
+       #binding-cells = <0>;
+       bindings = <&kp CARET>, <&kp 6>;
+       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    RPAR7: RPAR7 {
+       compatible = "zmk,behavior-mod-morph";
+       label = "RPAR7";
+       #binding-cells = <0>;
+       bindings = <&kp RPAR>, <&kp 7>;
+       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    RBKT8: RBKT8 {
+       compatible = "zmk,behavior-mod-morph";
+       label = "RBKT8";
+       #binding-cells = <0>;
+       bindings = <&kp RBKT>, <&kp 8>;
+       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    RBRC9: RBRC9 {
+       compatible = "zmk,behavior-mod-morph";
+       label = "RBRC9";
+       #binding-cells = <0>;
+       bindings = <&kp LBRC>, <&kp 9>;
+       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    DLLR0: DLLR0 {
+       compatible = "zmk,behavior-mod-morph";
+       label = "DLLR0";
+       #binding-cells = <0>;
+       bindings = <&kp DLLR>, <&kp 0>;
+       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    EXCLAMPS: EXCLAMPS {
+       compatible = "zmk,behavior-mod-morph";
+       label = "EXCLAMPS";
+       #binding-cells = <0>;
+       bindings = <&kp EXCL>, <&kp AMPS>;
+       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    ATHASH: ATHASH {
+       compatible = "zmk,behavior-mod-morph";
+       label = "ATHASH";
+       #binding-cells = <0>;
+       bindings = <&kp AT>, <&kp HASH>;
+       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
   };
 
     keymap {
@@ -40,11 +126,11 @@
 
         default_layer {
             bindings = <
- &kp EQUAL     &kp N1  &kp N2    &kp N3     &kp N4  &kp N5              &tog 1                                                                                &mo 3  &kp N6    &kp N7     &kp N8    &kp N9    &kp N0  &kp MINUS
+ &kp EQUAL     &kp ASTRK1  &kp LBRC2    &kp LBKT3     &kp LPAR4  &kp PRCNT5              &tog 1                                                                                &mo 3  &kp CARET6    &kp RPAR7     &kp RBKT8    &kp RBRC9    &kp DLLR0  &kp MINUS
    &kp TAB      &kp Q   &kp W     &kp E      &kp R   &kp T               &none                                                                                &none   &kp Y     &kp U      &kp I     &kp O     &kp P   &kp BSLH
    &kp ESC      &kp A   &kp S     &kp D      &kp F   &kp G               &none   &kp LCTRL  &kp LEFT_ALT                  &kp RIGHT_ALT  &kp RIGHT_SHIFT      &none   &kp H     &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
  &kp LSHFT      &kp Z   &kp X     &kp C      &kp V   &kp B                                  &kp LEFT_GUI                  &kp RIGHT_GUI                               &kp N     &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
-     &mo 2  &kp GRAVE  &trans  &kp LEFT  &kp RIGHT                    &kp BSPC  &kp DELETE      &kp HOME                        &kp END        &kp ENTER  &kp SPACE          &kp DOWN     &kp UP  &kp LBKT  &kp RBKT      &mo 2
+     &mo 2  &kp GRAVE  &kp ATHASH  &kp LEFT  &kp RIGHT                    &kp BSPC  &kp DELETE      &kp HOME                        &kp END        &kp ENTER  &kp SPACE          &kp DOWN     &kp UP  &kp EXCLAMPS  &trans      &mo 2
             >;
         };
 
