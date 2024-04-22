@@ -32,6 +32,13 @@
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
     };
+    astrk1: astrk_n1 {
+        compatible = "zmk,behavior-mod-morph";
+        label = "astrk_n1";
+        #binding-cells = <0>;
+        bindings = <&kp ASTRK>, <&kp KP_N1>;
+        mods = <(LGUI|LSHIFT|RGUI|RSHIFT)>;
+    };
   };
 
     keymap {
@@ -80,4 +87,3 @@
 
     };
 };
-
