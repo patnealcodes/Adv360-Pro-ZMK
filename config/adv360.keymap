@@ -126,11 +126,11 @@
 
         default_layer {
             bindings = <
- &kp EQUAL     &kp ASTRK1  &kp LBRC2    &kp LBKT3     &kp LPAR4  &kp PRCNT5              &tog 1                                                                                &mo 3  &kp CARET6    &kp RPAR7     &kp RBKT8    &kp RBRC9    &kp DLLR0  &kp MINUS
+ &kp EQUAL     &ASTRK1  &LBRC2    &LBKT3     &LPAR4  &PRCNT5              &tog 1                                                                                &mo 3  &CARET6    &RPAR7     &RBKT8    &RBRC9    &DLLR0  &kp &MINUS
    &kp TAB      &kp Q   &kp W     &kp E      &kp R   &kp T               &none                                                                                &none   &kp Y     &kp U      &kp I     &kp O     &kp P   &kp BSLH
-   &kp ESC      &kp A   &kp S     &kp D      &kp F   &kp G               &none   &kp LCTRL  &kp LEFT_ALT                  &kp RIGHT_ALT  &kp RIGHT_SHIFT      &none   &kp H     &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
+   &kp ESC      &kp A   &kp S     &kp D      &kp F   &kp G               &none   &kp LCTRL  &kp LEFT_ALT                  &kp RIGHT_ALT  &mo 2      &none   &kp H     &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
  &kp LSHFT      &kp Z   &kp X     &kp C      &kp V   &kp B                                  &kp LEFT_GUI                  &kp RIGHT_GUI                               &kp N     &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
-     &mo 2  &kp GRAVE  &kp ATHASH  &kp LEFT  &kp RIGHT                    &kp BSPC  &kp DELETE      &kp HOME                        &kp END        &kp ENTER  &kp SPACE          &kp DOWN     &kp UP  &kp EXCLAMPS  &trans      &mo 2
+     &mo 2  &kp GRAVE  &ATHASH  &kp LEFT  &kp RIGHT                    &kp BSPC  &kp DELETE      &kp HOME                        &kp END        &kp ENTER  &kp SPACE          &kp DOWN     &kp UP  &kp &EXCLAMPS  &trans      &mo 2
             >;
         };
 
