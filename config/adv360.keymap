@@ -36,14 +36,14 @@
         compatible = "zmk,behavior-mod-morph";
         label = "astrk_n1";
         #binding-cells = <0>;
-        bindings = <&kp ASTRK>, <&kp KP_N1>;
+        bindings = <&kp ASTRK>, <&kp N1>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     lbrc2: lbrc_2 {
        compatible = "zmk,behavior-mod-morph";
        label = "lbrc_2";
        #binding-cells = <0>;
-       bindings = <&kp LBRC>, <&kp KP_N2>;
+       bindings = <&kp LBRC>, <&kp N2>;
        mods = <(MOD_LSFT|MOD_RSFT)>;
     };
   };
