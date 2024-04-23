@@ -102,6 +102,21 @@
        bindings = <&kp DLLR>, <&kp N0>;
        mods = <(MOD_LSFT|MOD_RSFT)>;
     };
+
+    EXCLAMPS: EXCL_AMPS {
+       compatible = "zmk,behavior-mod-morph";
+       label = "EXCL_AMPS";
+       #binding-cells = <0>;
+       bindings = <&kp EXCL>, <&kp AMPS>;
+       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    ATHASH: AT_HASH {
+       compatible = "zmk,behavior-mod-morph";
+       label = "AT_HASH";
+       #binding-cells = <0>;
+       bindings = <&kp AT>, <&kp HASH>;
+       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
   };
 
     keymap {
@@ -112,9 +127,9 @@
             bindings = <
  &kp EQUAL     &ASTRK1  &LBRC2    &LBKT3     &LPAR4  &PRCNT5             &tog 1                                                                                &mo 3  &CARET6   &RPAR7     &RBKT8    &RBRC9    &DLLR0   &kp MINUS
    &kp TAB      &kp Q   &kp W     &kp E      &kp R   &kp T               &none                                                                                &none   &kp Y     &kp U      &kp I     &kp O     &kp P   &kp BSLH
-   &kp ESC      &kp A   &kp S     &kp D      &kp F   &kp G               &none   &kp LCTRL  &kp LEFT_ALT                  &kp RIGHT_ALT  &kp RIGHT_SHIFT      &none   &kp H     &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
+   &kp ESC      &kp A   &kp S     &kp D      &kp F   &kp G               &none   &kp LCTRL  &kp LEFT_ALT                  &kp RIGHT_ALT  &mo 2      &none   &kp H     &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
  &kp LSHFT      &kp Z   &kp X     &kp C      &kp V   &kp B                                  &kp LEFT_GUI                  &kp RIGHT_GUI                               &kp N     &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
-     &mo 2  &kp GRAVE  &trans  &kp LEFT  &kp RIGHT                    &kp BSPC  &kp DELETE      &kp HOME                        &kp END        &kp ENTER  &kp SPACE          &kp DOWN     &kp UP  &kp LBKT  &kp RBKT      &mo 2
+     &mo 2  &kp GRAVE  &ATHASH  &kp LEFT  &kp RIGHT                    &kp BSPC  &kp DELETE      &kp HOME                        &kp END        &kp ENTER  &kp SPACE          &kp DOWN     &kp UP  &EXCLAMPS  &trans      &mo 2
             >;
         };
 
