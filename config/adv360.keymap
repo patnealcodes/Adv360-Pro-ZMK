@@ -60,18 +60,18 @@
        bindings = <&kp LPAR>, <&kp N4>;
        mods = <(MOD_LSFT|MOD_RSFT)>;
     };
-    GT5: GT_5 {
+    LT5: LT_5 {
        compatible = "zmk,behavior-mod-morph";
-       label = "GT_5";
+       label = "LT_5";
        #binding-cells = <0>;
-       bindings = <&kp GT>, <&kp N5>;
+       bindings = <&kp LT>, <&kp N5>;
        mods = <(MOD_LSFT|MOD_RSFT)>;
     };
-    LT6: LT_6 {
+    GT6: GT_6 {
        compatible = "zmk,behavior-mod-morph";
-       label = "LT_6";
+       label = "GT_6";
        #binding-cells = <0>;
-       bindings = <&kp LT>, <&kp N6>;
+       bindings = <&kp GT>, <&kp N6>;
        mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     RPAR7: RPAR_7 {
