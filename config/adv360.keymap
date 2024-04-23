@@ -92,7 +92,7 @@
        compatible = "zmk,behavior-mod-morph";
        label = "RBRC_9";
        #binding-cells = <0>;
-       bindings = <&kp LBRC>, <&kp N9>;
+       bindings = <&kp RBRC>, <&kp N9>;
        mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     DLLR0: DLLR_0 {
