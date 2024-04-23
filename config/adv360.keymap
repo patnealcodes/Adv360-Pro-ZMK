@@ -39,6 +39,13 @@
         bindings = <&kp ASTRK>, <&kp KP_N1>;
         mods = <(LGUI|LSHIFT|RGUI|RSHIFT)>;
     };
+    lbrc2: lbrc_2 {
+       compatible = "zmk,behavior-mod-morph";
+       label = "lbrc_2";
+       #binding-cells = <0>;
+       bindings = <&kp LBRC>, <&kp KP_N2>;
+       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
   };
 
     keymap {
