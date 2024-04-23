@@ -32,11 +32,11 @@
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
     };
-    ASTRK1: ASTRK_1 {
+    CARET1: CARET_1 {
        compatible = "zmk,behavior-mod-morph";
-       label = "ASTRK_1";
+       label = "CARET_1";
        #binding-cells = <0>;
-       bindings = <&kp ASTRK>, <&kp N1>;
+       bindings = <&kp CARET>, <&kp N1>;
        mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     LBRC2: LBRC_2 {
@@ -60,18 +60,18 @@
        bindings = <&kp LPAR>, <&kp N4>;
        mods = <(MOD_LSFT|MOD_RSFT)>;
     };
-    PRCNT5: PRCNT_5 {
+    GT5: GT_5 {
        compatible = "zmk,behavior-mod-morph";
-       label = "PRCNT_5";
+       label = "GT_5";
        #binding-cells = <0>;
-       bindings = <&kp PRCNT>, <&kp N5>;
+       bindings = <&kp GT>, <&kp N5>;
        mods = <(MOD_LSFT|MOD_RSFT)>;
     };
-    CARET6: CARET_6 {
+    LT6: LT_6 {
        compatible = "zmk,behavior-mod-morph";
-       label = "CARET_6";
+       label = "LT_6";
        #binding-cells = <0>;
-       bindings = <&kp CARET>, <&kp N6>;
+       bindings = <&kp LT>, <&kp N6>;
        mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     RPAR7: RPAR_7 {
@@ -117,6 +117,14 @@
        bindings = <&kp AT>, <&kp HASH>;
        mods = <(MOD_LSFT|MOD_RSFT)>;
     };
+    
+    ASTRKPRCNT: ASTRK_PRCNT {
+       compatible = "zmk,behavior-mod-morph";
+       label = "AST_PRCNT";
+       #binding-cells = <0>;
+       bindings = <&kp ASTRK>, <&kp PCT>;
+       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
   };
 
     keymap {
@@ -129,7 +137,7 @@
    &kp TAB      &kp Q   &kp W     &kp E      &kp R   &kp T               &none                                                                                &none   &kp Y     &kp U      &kp I     &kp O     &kp P   &kp BSLH
    &kp ESC      &kp A   &kp S     &kp D      &kp F   &kp G               &none   &kp LCTRL  &kp LEFT_ALT                  &kp RIGHT_ALT  &mo 2      &none   &kp H     &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
  &kp LSHFT      &kp Z   &kp X     &kp C      &kp V   &kp B                                  &kp LEFT_GUI                  &kp RIGHT_GUI                               &kp N     &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
-     &mo 2  &kp GRAVE  &ATHASH  &kp LEFT  &kp RIGHT                    &kp BSPC  &kp DELETE      &kp HOME                        &kp END        &kp ENTER  &kp SPACE          &kp DOWN     &kp UP  &EXCLAMPS  &trans      &mo 2
+     &mo 2  &kp GRAVE  &ATHASH  &kp LEFT  &kp RIGHT                    &kp BSPC  &kp DELETE      &kp HOME                        &kp END        &kp ENTER  &kp SPACE          &kp DOWN     &kp UP  &EXCLAMPS  &ASTRKPRCNT      &mo 2
             >;
         };
 
