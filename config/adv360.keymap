@@ -122,7 +122,7 @@
        compatible = "zmk,behavior-mod-morph";
        label = "AST_PRCNT";
        #binding-cells = <0>;
-       bindings = <&kp ASTRK>, <&kp PCT>;
+       bindings = <&kp ASTRK>, <&kp PRCNT>;
        mods = <(MOD_LSFT|MOD_RSFT)>;
     };
   };
