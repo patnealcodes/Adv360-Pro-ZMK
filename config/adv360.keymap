@@ -103,28 +103,6 @@
        mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
-    EXCLAMPS: EXCL_AMPS {
-       compatible = "zmk,behavior-mod-morph";
-       label = "EXCL_AMPS";
-       #binding-cells = <0>;
-       bindings = <&kp EXCL>, <&kp AMPS>;
-       mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    ATHASH: AT_HASH {
-       compatible = "zmk,behavior-mod-morph";
-       label = "AT_HASH";
-       #binding-cells = <0>;
-       bindings = <&kp AT>, <&kp HASH>;
-       mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    
-    ASTRKPRCNT: ASTRK_PRCNT {
-       compatible = "zmk,behavior-mod-morph";
-       label = "ASTRK_PRCNT";
-       #binding-cells = <0>;
-       bindings = <&kp ASTRK>, <&kp PRCNT>;
-       mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
     BSPCDELETE: BSPC_DELETE {
        compatible = "zmk,behavior-mod-morph";
        label = "BSPC_DELETE";
@@ -142,9 +120,9 @@
             bindings = <
  &kp EQUAL     &CARET1  &LBRC2    &LBKT3     &LPAR4  &LT5                &tog 1                                                                                &mo 3  &GT6      &RPAR7     &RBKT8    &RBRC9    &DLLR0   &kp MINUS
    &kp TAB      &kp Q   &kp W     &kp E      &kp R   &kp T               &none                                                                                &none   &kp Y     &kp U      &kp I     &kp O     &kp P   &kp BSLH
-   &kp ESC      &kp A   &kp S     &kp D      &kp F   &kp G               &none   &kp LCTRL  &kp LEFT_GUI                  &kp RIGHT_ALT  &mo 2      &none   &kp H     &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
- &kp LSHFT      &kp Z   &kp X     &kp C      &kp V   &kp B                                  &kp LEFT_ALT                  &kp RIGHT_GUI                               &kp N     &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
-     &mo 2  &kp GRAVE  &ATHASH  &kp LEFT  &kp RIGHT                    &BSPCDELETE  &mo 2      &kp HOME                        &kp END        &kp ENTER  &kp SPACE          &kp DOWN     &kp UP  &EXCLAMPS  &ASTRKPRCNT   &mo 2
+   &kp ESC      &kp A   &kp S     &kp D      &kp F   &kp G               &none   &kp LCTRL  &kp LEFT_GUI                  &kp RIGHT_GUI  &kp RCTRL      &none   &kp H     &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
+ &kp LSHFT      &kp Z   &kp X     &kp C      &kp V   &kp B                                  &kp LEFT_ALT                  &kp RIGHT_ALT                               &kp N     &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
+     &mo 2  &kp HASH  &kp AT  &kp AMPS  &kp PRCNT                    &BSPCDELETE  &kp LSHIFT      &kp HOME                        &mo 2        &kp ENTER  &kp SPACE          &kp GRAVE     &kp TILDE  &kp EXCL  &kp ASTRK   &mo 2
             >;
         };
 
@@ -162,7 +140,7 @@
             bindings = <
  &kp F11      &kp F1        &kp F2        &kp F3      &kp F4  &kp F5                      &tog 1                                                             &mo 3  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F12
   &trans      &trans        &trans        &trans      &trans  &trans                       &none                                                             &none  &trans  &trans  &trans  &trans   &trans   &trans
-  &trans  &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT  &trans                       &none            &trans  &trans                  &trans  &trans   &none  &trans  &trans  &trans  &trans   &trans   &trans
+  &trans  &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT  &trans                       &none            &trans  &trans                  &trans  &trans   &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT   &trans   &trans
   &trans      &trans        &trans        &trans      &trans  &trans                                                                                         &none  &trans  &trans  &trans  &trans   &trans   &trans
   &trans      &trans        &trans        &trans      &trans                    &kp K_PLAY_PAUSE  &kp C_PLAY_PAUSE  &trans                  &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
             >;
