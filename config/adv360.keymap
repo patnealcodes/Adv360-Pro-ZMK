@@ -50,11 +50,11 @@
 
         layer_fn {
             bindings = <
- &kp F11      &kp F1        &kp F2        &kp F3      &kp F4  &kp F5                      &tog 1                                                             &mo 2  &kp F6    &kp F7    &kp F8    &kp F9   &kp F10  &kp F12
-  &trans   &kp CARET      &kp LBRC      &kp LBKT    &kp LPAR  &kp LT                       &none                                                             &none  &kp GT  &kp RPAR  &kp RBKT  &kp RBRC  &kp DLLR   &trans
-  &trans  &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT  &trans                       &none            &trans  &trans                  &trans  &trans   &none  &trans    &trans    &trans    &trans    &trans   &trans
-  &trans  &kp K_PREV  &kp K_VOL_DN  &kp K_VOL_UP  &kp K_NEXT  &trans                                                &trans                  &trans                  &trans    &trans    &trans    &trans    &trans   &trans
-  &trans      &trans        &trans        &trans      &trans                    &kp K_PLAY_PAUSE  &kp C_PLAY_PAUSE  &trans                  &trans  &trans  &trans            &trans    &trans    &trans    &trans   &trans
+ &kp F11      &kp F1        &kp F2        &kp F3      &kp F4  &kp F5                      &tog 1                                                   &mo 2    &kp F6    &kp F7    &kp F8     &kp F9   &kp F10  &kp F12
+  &trans   &kp CARET      &kp LBRC      &kp LBKT    &kp LPAR  &kp LT                       &none                                                   &none    &kp GT  &kp RPAR  &kp RBKT   &kp RBRC  &kp DLLR   &trans
+  &trans  &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT  &trans                       &none  &trans  &trans                  &trans  &trans   &none  &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT    &trans   &trans
+  &trans      &trans        &trans        &trans      &trans  &trans                                      &trans                  &trans                    &trans    &trans    &trans     &trans    &trans   &trans
+  &trans      &trans        &trans        &trans      &trans                    &kp K_PLAY_PAUSE  &trans  &trans                  &trans  &trans  &trans              &trans    &trans     &trans    &trans   &trans
             >;
         };
 
