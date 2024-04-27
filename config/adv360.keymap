@@ -6,12 +6,6 @@
  */
 
 
-/* THIS FILE WAS GENERATED!
- *
- * This file was generated automatically. You may or may not want to
- * edit it directly.
- */
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
@@ -32,6 +26,86 @@
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
     };
+
+CARET1: CARET_1 {
+       compatible = "zmk,behavior-mod-morph";
+       label = "CARET_1";
+       #binding-cells = <0>;
+       bindings = <&kp CARET>, <&kp N1>;
+       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    LBRC2: LBRC_2 {
+       compatible = "zmk,behavior-mod-morph";
+       label = "LBRC_2";
+       #binding-cells = <0>;
+       bindings = <&kp LBRC>, <&kp N2>;
+       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    LBKT3: LBKT_3 {
+       compatible = "zmk,behavior-mod-morph";
+       label = "LBKT_3";
+       #binding-cells = <0>;
+       bindings = <&kp LBKT>, <&kp N3>;
+       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    LPAR4: LPAR_4 {
+       compatible = "zmk,behavior-mod-morph";
+       label = "LPAR_4";
+       #binding-cells = <0>;
+       bindings = <&kp LPAR>, <&kp N4>;
+       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    LT5: LT_5 {
+       compatible = "zmk,behavior-mod-morph";
+       label = "LT_5";
+       #binding-cells = <0>;
+       bindings = <&kp LT>, <&kp N5>;
+       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    GT6: GT_6 {
+       compatible = "zmk,behavior-mod-morph";
+       label = "GT_6";
+       #binding-cells = <0>;
+       bindings = <&kp GT>, <&kp N6>;
+       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    RPAR7: RPAR_7 {
+       compatible = "zmk,behavior-mod-morph";
+       label = "RPAR_7";
+       #binding-cells = <0>;
+       bindings = <&kp RPAR>, <&kp N7>;
+       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    RBKT8: RBKT_8 {
+       compatible = "zmk,behavior-mod-morph";
+       label = "RBKT_8";
+       #binding-cells = <0>;
+       bindings = <&kp RBKT>, <&kp N8>;
+       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    RBRC9: RBRC_9 {
+       compatible = "zmk,behavior-mod-morph";
+       label = "RBRC_9";
+       #binding-cells = <0>;
+       bindings = <&kp RBRC>, <&kp N9>;
+       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    DLLR0: DLLR_0 {
+       compatible = "zmk,behavior-mod-morph";
+       label = "DLLR_0";
+       #binding-cells = <0>;
+       bindings = <&kp DLLR>, <&kp N0>;
+       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    BSPCDELETE: BSPC_DELETE {
+       compatible = "zmk,behavior-mod-morph";
+       label = "BSPC_DELETE";
+       #binding-cells = <0>;
+       bindings = <&kp BSPC>, <&kp DELETE>;
+       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+  };
   };
 
     keymap {
@@ -50,7 +124,7 @@
 
         layer_fn {
             bindings = <
- &kp F11      &kp F1        &kp F2        &kp F3      &kp F4  &kp F5                      &tog 1                                                   &mo 2    &kp F6    &kp F7    &kp F8     &kp F9   &kp F10  &kp F12
+ &kp F11      &CARET1        &LBRC2        &LBKT3      &LPAR4  &LT5                        &tog 1                                                   &mo 2   &GT6    &RPAR7    &RBKT8     &RBRC9   &DLLR0			&kp F12
   &trans   &kp CARET      &kp LBRC      &kp LBKT    &kp LPAR  &kp LT                       &none                                                   &none    &kp GT  &kp RPAR  &kp RBKT   &kp RBRC  &kp DLLR   &trans
   &trans  &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT  &trans                       &none  &trans  &trans                  &trans  &trans   &none  &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT    &trans   &trans
   &trans      &trans        &trans        &trans      &trans  &trans                                      &trans                  &trans                    &trans    &trans    &trans     &trans    &trans   &trans
