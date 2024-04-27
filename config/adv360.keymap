@@ -106,7 +106,6 @@ CARET1: CARET_1 {
        mods = <(MOD_LSFT|MOD_RSFT)>;
     };
   };
-  };
 
     keymap {
         compatible = "zmk,keymap";
