@@ -103,6 +103,30 @@
        mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
+    EXCLASTRK: EXCL_ASTRK {
+       compatible = "zmk,behavior-mod-morph";
+       label = "EXCL_ASTRK";
+       #binding-cells = <0>;
+       bindings = <&kp EXCL>, <&kp ASTRK>;
+       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    AMPSPRCNT: AMPS_PRCNT {
+       compatible = "zmk,behavior-mod-morph";
+       label = "AMPS_PRCNT";
+       #binding-cells = <0>;
+       bindings = <&kp AMPS>, <&kp PRCNT>;
+       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    ATHASH: AT_HASH {
+       compatible = "zmk,behavior-mod-morph";
+       label = "AT_HASH";
+       #binding-cells = <0>;
+       bindings = <&kp AT>, <&kp HASH>;
+       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
 
   };
 
