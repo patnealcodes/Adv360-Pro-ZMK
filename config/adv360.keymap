@@ -130,7 +130,7 @@ CARET1: CARET_1 {
         default_layer {
             bindings = <
 
-&kp EQUAL   &CARET1     &LBRC2      &LBKT3     &LPAR4      &LT5    &tog 1                                                                                       &mo 2   &GT6    &RPAR7      &RBKT8     &RBRC9       &DLLR0	    &kp MINUS
+&kp EQUAL   &CARET1     &LBRC2      &LBKT3     &LPAR4      &LT5    &tog 3                                                                                       &mo 2   &GT6    &RPAR7      &RBKT8     &RBRC9       &DLLR0	    &kp MINUS
 &kp TAB     &kp Q       &kp W       &kp E      &kp R       &kp T   &none                                                                                        &none   &kp Y   &kp U       &kp I       &kp O       &kp P       &kp BSLH
 &kp ESC     &kp A       &kp S       &kp D      &kp F       &kp G   &none               &kp LGUI    &mo 1                    &mo 1       &kp RSHFT               &none   &kp H   &kp J       &kp K       &kp L       &kp SEMI    &kp SQT
 &kp LSHFT   &kp Z       &kp X       &kp C      &kp V       &kp B                                   &kp LALT                 &kp RALT                                    &kp N   &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp RSHFT
@@ -155,6 +155,16 @@ CARET1: CARET_1 {
   &none         &none         &none         &none         &none         &none                  &none   &none   &none                  &bt BT_CLR       &none  &rgb_ug RGB_MEFS_CMD 5   &none       &none       &none   &none   &none   &none
   &none         &none         &none         &none    &macro_ver         &none                                  &none                       &none                                       &none       &none       &none   &none   &none   &none
   &none         &none         &none         &none         &none                                &none   &none   &none                       &none  &bl BL_TOG         &rgb_ug RGB_TOG          &bl BL_INC  &bl BL_DEC   &none   &none   &none
+            >;
+        };
+
+        layer_game {
+            bindings = <
+&kp F11     &kp F1      &kp F2      &kp F3     &kp F4      &kp F5  &tog 1                                                   &mo 2    &kp F6    &kp F7    &kp F8     &kp F9   &kp F10  &kp F12
+&kp TAB     &kp T       &kp Q       &kp W      &kp E       &kp R   &none                                                                                        &none   &kp Y   &kp U       &kp I       &kp O       &kp P       &kp BSLH
+&kp ESC     &kp G       &kp A       &kp S      &kp D       &kp F   &none               &kp SHIFT    &mo 1                    &mo 1       &kp RSHFT               &none   &kp H   &kp J       &kp K       &kp L       &kp SEMI    &kp SQT
+&kp LSHFT   &kp B       &kp Z       &kp X      &kp C       &kp V                                   &kp LALT                 &kp RALT                                    &kp N   &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp RSHFT
+&mo 1       &kp GRAVE   &ATHASH     &kp LEFT   &kp RIGHT                   &kp LCTRL    &kp LCTRL   &kp LSHFT                &kp DEL     &kp ENTER  &kp SPACE                    &kp DOWN    &kp UP      &EXCLASTRK  &AMPSPRCNT &mo 1
             >;
         };
 
