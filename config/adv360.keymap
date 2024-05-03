@@ -20,21 +20,11 @@
         #include "macros.dtsi"
     #include "version.dtsi"
 
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick_tap_ms = <175>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-
         CARET1: CARET_1 {
             compatible = "zmk,behavior-mod-morph";
             label = "CARET_1";
             #binding-cells = <0>;
-            bindings = <&kp CARET>, <&kp N1>;
+            bindings = <&kp N1>, <&kp CARET>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -43,7 +33,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "LBRC_2";
             #binding-cells = <0>;
-            bindings = <&kp LBRC>, <&kp N2>;
+            bindings = <&kp N2>, <&kp LEFT_BRACE>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -52,7 +42,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "LBKT_3";
             #binding-cells = <0>;
-            bindings = <&kp LBKT>, <&kp N3>;
+            bindings = <&kp N3>, <&kp LEFT_BRACKET>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -61,7 +51,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "LPAR_4";
             #binding-cells = <0>;
-            bindings = <&kp LPAR>, <&kp N4>;
+            bindings = <&kp N4>, <&kp LEFT_PARENTHESIS>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -70,7 +60,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "LT_5";
             #binding-cells = <0>;
-            bindings = <&kp LT>, <&kp N5>;
+            bindings = <&kp N5>, <&kp LESS_THAN>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -79,7 +69,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "GT_6";
             #binding-cells = <0>;
-            bindings = <&kp GT>, <&kp N6>;
+            bindings = <&kp N6>, <&kp GREATER_THAN>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -88,7 +78,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "RPAR_7";
             #binding-cells = <0>;
-            bindings = <&kp RPAR>, <&kp N7>;
+            bindings = <&kp N7>, <&kp RIGHT_PARENTHESIS>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -97,7 +87,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "RBKT_8";
             #binding-cells = <0>;
-            bindings = <&kp RBKT>, <&kp N8>;
+            bindings = <&kp N8>, <&kp RIGHT_BRACKET>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -106,7 +96,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "RBRC_9";
             #binding-cells = <0>;
-            bindings = <&kp RBRC>, <&kp N9>;
+            bindings = <&kp N9>, <&kp RIGHT_BRACE>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -115,7 +105,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "DLLR_0";
             #binding-cells = <0>;
-            bindings = <&kp DLLR>, <&kp N0>;
+            bindings = <&kp N0>, <&kp DOLLAR>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
