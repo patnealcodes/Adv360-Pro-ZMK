@@ -154,6 +154,15 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        BCKSPDEL: BCKSPDEL {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BCKSPDEL";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -165,7 +174,7 @@
 &kp TAB    &kp Q         &kp W        &kp E     &kp R         &kp T   &kp LEFT_BRACKET                                                             &kp RIGHT_BRACKET  &kp Y         &kp U        &kp I         &kp O            &kp P     &kp BSLH
 &kp ESC    &kp A         &kp S        &kp D     &kp F         &kp G   &LPARLT           &kp LEFT_ALT  &kp LMETA          &kp RIGHT_ALT  &mo 1      &RPARGT            &kp H         &kp J        &kp K         &kp L            &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z         &kp X        &kp C     &kp V         &kp B                                   &mo 1              &mo 1                                        &kp N         &kp M        &kp COMMA     &kp DOT          &kp FSLH  &kp RSHFT
-&kp CARET  &kp GRAVE     &kp AT_SIGN  &kp HASH  &kp TILDE             &kp BACKSPACE     &kp LCTRL     &kp LEFT_META      &kp DEL        &kp ENTER  &kp SPACE                        &kp PERCENT  &kp ASTERISK  &kp EXCLAMATION  &kp AMPS  &kp DLLR
+&kp CARET  &kp GRAVE     &kp AT_SIGN  &kp HASH  &kp TILDE             &BCKSPDEL         &kp LCTRL     &kp LEFT_META      &BCKSPDEL      &kp ENTER  &kp SPACE                        &kp PERCENT  &kp ASTERISK  &kp EXCLAMATION  &kp AMPS  &kp DLLR
             >;
         };
 
